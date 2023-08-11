@@ -25,6 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', loginPage, name="login"),
     path('logout/', logoutPage, name="logout"),
-    path('/', home),
+    path('', home),
     path('recipe/', include('recipe.urls'),name="recipe"),
 ]
