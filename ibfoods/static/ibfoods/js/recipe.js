@@ -25,3 +25,24 @@ function view_recipe(recipe_id) {
 function cancel_request() {
 
 }
+$(document).ready(function() {
+    var ingredientsContainer = $('#ingredients-container');
+    var addIngredientButton = $('#add-ingredient');
+    var ingredientIndex = 1;
+
+    addIngredientButton.click(function() {
+        var newIngredient = `
+            <div class="ingredient-input">
+                <label for="ingredient-${ingredientIndex}">Ingredient:</label>
+                <input type="text" id="ingredient-${ingredientIndex}" name="ingredients" required>
+                <button type="button" class="remove-ingredient">Remove</button>
+            </div>
+        `;
+        ingredientsContainer.append(newIngredient);
+        ingredientIndex++;
+
+        $('.remove-ingredient').click(function() {
+            $(this).parent('.ingredient-input').remove();
+        });
+    });
+});

@@ -7,10 +7,15 @@
       <label for="title">Recipe Title</label>
       <input type="text" class="form-control" name="title" placeholder="Recipe title">
     </div>
-    <div class="form-group">
-      <label for="Ingredients">Ingredients</label>
-      <input type="text" class="form-control" name="ingredients" placeholder="ingredients">
-    </div>
+    <div id="ingredients-container" class="form-group">
+      <div class="ingredient-input">
+          <label for="ingredient-0">Ingredient:</label>
+          <input type="text" id="ingredient-0" name="ingredients" required>
+          <button type="button" class="remove-ingredient">Remove</button>
+      </div>
+  </div>
+  
+  <button type="button" id="add-ingredient">Add Ingredient</button>
     <div class="form-group">
         <label for="Instructions">Instructions</label>
         <textarea type="text" rows=10 class="form-control" name="instructions" placeholder="Instructions"></textarea>
