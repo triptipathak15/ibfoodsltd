@@ -10,6 +10,6 @@ img {
 form input,textarea{
     max-width: 70%;
 }
-  div {
+#instructions {
     white-space: pre-wrap;
 }
