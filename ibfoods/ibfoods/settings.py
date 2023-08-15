@@ -52,7 +52,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'ibfoods.urls'
-print("*******",BASE_DIR)
 import os
 TEMPLATES = [
     {

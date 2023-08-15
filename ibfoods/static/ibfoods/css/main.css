@@ -3864,7 +3864,18 @@ textarea.form-control-lg {
   max-height: var(--bs-scroll-height, 75vh);
   overflow-y: auto;
 }
-
+.login-page{
+  /* margin-top:10%; */
+  /* margin-left:30%; */
+  background-image: url("/static/assets/img/header-bg.jpg");
+}
+.page-center{
+  margin-top:10%;
+  margin-left:30%;
+}
+.form-item{
+  min-height: 80px;
+}
 @media (min-width: 576px) {
   .navbar-expand-sm {
     flex-wrap: nowrap;
