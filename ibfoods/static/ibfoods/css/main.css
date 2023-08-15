@@ -10946,7 +10946,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("/static/images/restaurant2.jpg");
+  background-image: url("/static/images/restaurant.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10979,7 +10979,7 @@ header.masthead .masthead-heading {
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
@@ -11253,10 +11253,20 @@ header.masthead .masthead-heading {
 .img-brand {
   height: 2.75rem;
 }
-
+section#about {
+  background-color: #BFCD3D;
+}
+section#about p{
+  line-height: 1.875em;
+  font-size: 15px;
+  text-align: center !important;
+  letter-spacing: normal;
+  margin-block: 0;
+  margin: 0;
+}
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("/static/assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -11309,6 +11319,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
