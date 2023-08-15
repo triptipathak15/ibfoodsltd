@@ -1,6 +1,6 @@
-{% extends 'base.html' %}
-{% block content %}
-{% load static %}
+{% extends 'recipe.html' %}
+{% block recipe_content %}
+<div class="recipe">
     <h1>{{ recipe.title }}</h1>
     <ul>
         {% for ingredient in recipe.ingredients.all %}
@@ -8,4 +8,5 @@
         {% endfor %}
     </ul>
     <p id="instructions">{{ recipe.instructions }}</p>
+</div>
 {% endblock %}
