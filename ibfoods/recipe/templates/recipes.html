@@ -4,7 +4,7 @@
           <th scope="col">Recipe No</th>
           <th scope="col">Name</th>
           <th scope="col">Ingredients ID</th>
-          <th scope="col">Instructions</th>
+<!--           <th scope="col">Instructions</th> -->
           <th scope="col">Action</th>
         </tr>
       </thead>
@@ -16,11 +16,11 @@
                <td>
                   <ul>
                     {% for ingredient in r.ingredients.all %}
-                        {{ ingredient.name }}
+                        <li>{{ ingredient.name }}</li>
                     {% endfor %}
                 </ul>
               </td>
-              <td>{{r.instructions}}</td>
+<!--               <td>{{r.instructions}}</td> -->
               <!-- <td><button class="btn btn-success" id="btn_approve" onclick="view_recipe(2)">Edit</button> -->
               <td><button class="btn btn-warning" id="btn_deny" onclick="view_recipe('{{r.id}}')">View</button>
                 </td>
